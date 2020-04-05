@@ -1,0 +1,66 @@
+.Header {
+  position: absolute;
+  top: 0; /* Stick it to the top */
+  max-height: 80px;
+  width: 100%;
+
+  display: grid;
+  grid-template-areas: "logo nav";
+
+  background-color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+.Logo {
+  grid-area: logo;
+  height: 70px;
+}
+
+.Nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.Nav a,
+.navbar-heading a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.Nav a:hover,
+.navbar-heading a:hover {
+  color: rgb(172, 170, 170);
+}
+
+.navbar-heading {
+  /* display: flex; */
+  color: white;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
+  font-size: 24px;
+  transition: all .2s ease-in-out;
+}
